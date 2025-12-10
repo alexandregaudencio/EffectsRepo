@@ -1,12 +1,11 @@
-﻿// good min 0.001f and good max 0.08f;
-Shader "Transitions/Pixelate"
+﻿Shader "Transitions/Pixelate"
 {
 	Properties
 	{
 		_MainTex( "Base (RGB)", 2D ) = "white" {}
-        _CellSize( "Cell Size", float ) = 0.02
-        // this should be 1 / Screen.aspect. It is used to make the pixellation square
-		_WidthAspectMultiplier( "Width Aspect Multiplier", float ) = 1.0
+        _WidthAspectMultiplier( "Width Aspect Multiplier", Range(0.0,3.0 )) = 1.0
+		_Progress("Progress", Range(0.0, 1.0)) = 0.0
+		_ProgressColor("Progress Color", Color) = (0,0,0,1)
 	}
 
 	SubShader
@@ -16,7 +15,6 @@ Shader "Transitions/Pixelate"
 			ZTest Always Cull Off ZWrite Off
 			Fog { Mode off }
 
-
 CGPROGRAM
 
 #pragma vertex vert_img
@@ -24,22 +22,30 @@ CGPROGRAM
 #pragma fragmentoption ARB_precision_hint_fastest
 #include "UnityCG.cginc"
 
-
 sampler2D _MainTex;
-fixed _CellSize;
 fixed _WidthAspectMultiplier;
+fixed _Progress;
+fixed4 _ProgressColor;
 
-
+static const float MIN_CELL_SIZE = 0.001;
+static const float MAX_CELL_SIZE = 0.08;
 
 fixed4 frag( v2f_img i ):COLOR
 {
-	float2 cellSize = float2( _CellSize * _WidthAspectMultiplier, _CellSize );
+    // pixel interpolation
+    float cellSize = lerp(MIN_CELL_SIZE, MAX_CELL_SIZE, _Progress);
+    float2 cellSizeVec = float2(cellSize * _WidthAspectMultiplier, cellSize);
     float2 steppedUV = i.uv.xy;
-    steppedUV /= cellSize;
-    steppedUV = round( steppedUV );
-    steppedUV *= cellSize;
+    steppedUV /= cellSizeVec;
+    steppedUV = round(steppedUV);
+    steppedUV *= cellSizeVec;
 
-    return tex2D( _MainTex, steppedUV );
+    fixed4 pixelColor = tex2D(_MainTex, steppedUV);
+
+    // blend color by Progress
+    fixed4 finalColor = lerp(pixelColor, _ProgressColor, _Progress);
+
+    return finalColor;
 }
 
 ENDCG
