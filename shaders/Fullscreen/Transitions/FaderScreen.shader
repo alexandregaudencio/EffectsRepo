@@ -1,4 +1,4 @@
-﻿Shader "Transitions/Fader"
+﻿Shader "Transitions/FaderScreen"
 {
 	Properties
 	{
