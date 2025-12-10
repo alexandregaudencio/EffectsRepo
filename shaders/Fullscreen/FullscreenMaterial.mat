@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FullscreenMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: c3c5fc38b4d757a4b8aa5fbbbf97c6b3, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a020e5ee45bcebd4d9fa32eb3848e3e5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -122,7 +122,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 1
+    - _Density: 0.27
     - _Depth: 3
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -135,7 +135,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Float: 23.44
+    - _Float: 0.4
     - _Frequency: 3.1
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 3
@@ -160,14 +160,15 @@ Material:
     - _RainIntensity: 0.964
     - _ReceiveShadows: 1
     - _RelativeRefractionIndex: 0.466
-    - _Scale: 0.05
+    - _Scale: 0.061
+    - _Size: 11.2
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SnowIntensity: 1
     - _SnowSize: 4
     - _SnowSpeed: 0.33
     - _SpecularHighlights: 1
-    - _Speed: 2
+    - _Speed: 10
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Strength: 0.05
