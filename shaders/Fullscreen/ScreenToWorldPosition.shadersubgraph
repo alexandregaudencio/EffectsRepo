@@ -67,7 +67,11 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "5e4415f693c341ecb1cc151d4b17424d"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -1254,6 +1258,26 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "5e4415f693c341ecb1cc151d4b17424d",
+    "m_Title": "Output uses",
+    "m_Content": "XY : 2D side scroller view\nXZ: 2D topdown view\n",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 218.39999389648438,
+        "y": -215.1999969482422,
+        "width": 175.20001220703126,
+        "height": 99.99999237060547
+    },
+    "m_Group": {
+        "m_Id": ""
     }
 }
 
