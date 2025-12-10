@@ -122,12 +122,12 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _Density: 1.5
+    - _Density: 1
     - _Depth: 3
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _Direction: 1
-    - _Disfusion: 2.5
+    - _Disfusion: 2
     - _Distance: 2.7
     - _Distortion: 0.574
     - _DropScale: 32.3
@@ -175,7 +175,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _scale: 0.05
-    - _speed: 2
+    - _speed: 0.75
     - _ySpeed: 0.12
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
