@@ -135,7 +135,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Float: -11.71
+    - _Float: 23.44
     - _Frequency: 3.1
     - _Fullscreen_AlphaBlendOperation: 0
     - _Fullscreen_BlendMode: 3
@@ -160,6 +160,7 @@ Material:
     - _RainIntensity: 0.964
     - _ReceiveShadows: 1
     - _RelativeRefractionIndex: 0.466
+    - _Scale: 0.05
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SnowIntensity: 1
@@ -175,11 +176,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _scale: 0.05
-    - _speed: 0.75
+    - _speed: 3
     - _ySpeed: 0.12
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 766.99615, g: 0, b: 0, a: 1}
     - _Direction: {r: 0.5, g: -1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProgressColor: {r: 0, g: 0, b: 0, a: 1}

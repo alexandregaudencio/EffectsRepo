@@ -1430,10 +1430,10 @@
     "m_Guid": {
         "m_GuidSerialized": "2830934e-cc53-4b0f-b19f-f4c1d2c1fa4c"
     },
-    "m_Name": "scale",
+    "m_Name": "Scale",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "scale",
-    "m_DefaultReferenceName": "_scale",
+    "m_RefNameGeneratedByDisplayName": "Scale",
+    "m_DefaultReferenceName": "_Scale",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -3621,10 +3621,10 @@
     "m_Guid": {
         "m_GuidSerialized": "029f7f1a-b6b1-4065-8d19-8c9c0c266477"
     },
-    "m_Name": "speed",
+    "m_Name": "Speed",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "speed",
-    "m_DefaultReferenceName": "_speed",
+    "m_RefNameGeneratedByDisplayName": "Speed",
+    "m_DefaultReferenceName": "_Speed",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
