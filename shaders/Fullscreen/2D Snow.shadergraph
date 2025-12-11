@@ -3317,8 +3317,8 @@
     "m_ObjectId": "89f8a0514e6d4ee0bb2e9c9d45ced194",
     "m_Title": "moviment 2D by  time",
     "m_Position": {
-        "x": -2885.60009765625,
-        "y": 3455.2001953125
+        "x": -2885.599853515625,
+        "y": 3455.199951171875
     }
 }
 
@@ -3856,6 +3856,9 @@
     },
     "m_Slots": [
         {
+            "m_Id": "a9e912b919a649128fdd68ca85378dc1"
+        },
+        {
             "m_Id": "6b9f1ec9669c416b950e6ee542a73acc"
         }
     ],
@@ -3868,8 +3871,12 @@
         "m_SerializableColors": []
     },
     "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"0b1aef17596b9734094d1e3fefb034fb\",\n        \"type\": 3\n    }\n}",
-    "m_PropertyGuids": [],
-    "m_PropertyIds": [],
+    "m_PropertyGuids": [
+        "fdbdf0ae-7290-4ef8-8c0f-e148c47775d3"
+    ],
+    "m_PropertyIds": [
+        684849782
+    ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
 }
@@ -3991,8 +3998,8 @@
     "m_ObjectId": "a86db00dfa4d44029a289d32c05e8f90",
     "m_Title": "move slowing down",
     "m_Position": {
-        "x": -2065.60009765625,
-        "y": 4021.599609375
+        "x": -2065.599853515625,
+        "y": 4021.599853515625
     }
 }
 
@@ -4008,6 +4015,21 @@
     "m_StageCapability": 3,
     "m_Value": 10.0,
     "m_DefaultValue": 2.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a9e912b919a649128fdd68ca85378dc1",
+    "m_Id": 684849782,
+    "m_DisplayName": "Rotation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Rotation",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 
