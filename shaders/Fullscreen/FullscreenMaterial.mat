@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FullscreenMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: a020e5ee45bcebd4d9fa32eb3848e3e5, type: 3}
+  m_Shader: {fileID: 4800000, guid: eb9aff1ddecd8f7478499753732697f1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,30 +36,15 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+    m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Density: 0.5
-    - _Float: -0.26
+    - _Amplitude: 0.0083
+    - _Frequency: 5.1
+    - _Intensity: 0.19
+    - _NoiseScale: 78
+    - _NoiseStrength: 0.0021
     - _Progress: 1
-    - _Rotation: -0.2
-    - _Scale: 0.1
-    - _Speed: 10
-    - _Width: 7
-    - _rotation: -5
-    m_Colors:
-    - _Direction: {r: 0.1, g: -1, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1

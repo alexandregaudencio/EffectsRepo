@@ -3,7 +3,6 @@ Shader "Fullscreen/HeatWave"
     Properties
     {
         _Progress("Progress", Range(0,1)) = 0.0
-        _Intensity("Distortion Intensity", Range(0,1)) = 0.25
         _Frequency("Wave Frequency", Range(1,50)) = 15
         _Amplitude("Wave Amplitude", Range(0,0.05)) = 0.015
         _NoiseStrength("Noise Strength", Range(0,0.05)) = 0.02
@@ -52,7 +51,6 @@ Shader "Fullscreen/HeatWave"
             SAMPLER(sampler_BlitTexture);
 
             float _Progress;
-            float _Intensity;
             float _Frequency;
             float _Amplitude;
 
@@ -97,8 +95,8 @@ Shader "Fullscreen/HeatWave"
                 // Heat wave base sinusoidal
                 //------------------------------------------------------------------
                 float heat =
-                    sin(i.uv.y * _Frequency + t * (1 + _Progress * 3))
-                    * _Amplitude * (1 + _Progress * 3);
+                    sin(i.uv.y * _Frequency + t * (1  * 3))
+                    * _Amplitude * (1  * 3);
 
                 //------------------------------------------------------------------
                 // Noise-based distortion (wobbling heat)
@@ -106,12 +104,12 @@ Shader "Fullscreen/HeatWave"
                 float2 nUV = i.uv * _NoiseScale + t * 0.5;
                 float n = noise(nUV);
 
-                float noiseDist = (n - 0.5) * _NoiseStrength * (1 + _Progress * 5);
+                float noiseDist = (n - 0.5) * _NoiseStrength * (1  * 5);
 
                 //------------------------------------------------------------------
                 // Combine distortions
                 //------------------------------------------------------------------
-                float distortion = (heat + noiseDist) * _Intensity * _Progress;
+                float distortion = (heat + noiseDist) *_Progress;
 
                 float2 uvDistorted = i.uv;
                 uvDistorted.x += distortion;
