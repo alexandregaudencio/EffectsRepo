@@ -42,7 +42,7 @@ Material:
     - _Amplitude: 0.0083
     - _Frequency: 5.1
     - _Intensity: 0.19
-    - _NoiseScale: 78
+    - _NoiseScale: 24
     - _NoiseStrength: 0.0021
     - _Progress: 1
     m_Colors: []

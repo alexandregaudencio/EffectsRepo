@@ -2,11 +2,11 @@ Shader "Fullscreen/HeatWave"
 {
     Properties
     {
-        _Progress("Progress", Range(0,1)) = 0.0
+        _Progress("Progress", Range(0,1)) = 1
         _Frequency("Wave Frequency", Range(1,50)) = 15
-        _Amplitude("Wave Amplitude", Range(0,0.05)) = 0.015
+        _Amplitude("Wave Amplitude", Range(0,0.05)) = 0.008
         _NoiseStrength("Noise Strength", Range(0,0.05)) = 0.02
-        _NoiseScale("Noise Scale", Range(1,500)) = 120
+        _NoiseScale("Noise Scale", Range(1,500)) = 24
     }
 
     SubShader
