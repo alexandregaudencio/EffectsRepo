@@ -52,11 +52,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _Density: 0.5
+    - _Float: -0.26
     - _Progress: 1
+    - _Rotation: -0.2
     - _Scale: 0.1
-    - _Size: 7
     - _Speed: 10
+    - _Width: 7
+    - _rotation: -5
     m_Colors:
-    - _Direction: {r: 0.1, g: 1, b: 0, a: 0}
+    - _Direction: {r: 0.1, g: -1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
